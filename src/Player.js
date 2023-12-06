@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import walkFrame1 from './assets/sprite-01.png';
 import walkFrame2 from './assets/sprite-02.png';
 
-const Player = ({ walking }) => {
+const Player = ({ walking, direction }) => {
   const [currentFrame, setCurrentFrame] = useState(1);
 
   useEffect(() => {
@@ -28,8 +28,8 @@ const Player = ({ walking }) => {
   const playerStyle = {
     position: 'absolute',
     bottom: '0',
-    left: '45%', // Center the player horizontally
-    transform: 'translateX(-50%)', // Adjust for centering
+    left: '50%', // Center the player horizontally
+    transform: `translateX(-50%) scaleX(${direction === 'left' ? -1 : 1})`, // Adjust for centering + flip if player is walking left
     width: '100px', // Adjust the width as needed
     height: '200px', // Adjust the height as needed
     backgroundImage: `url(${currentFrame === 1 ? walkFrame1 : walkFrame2})`,
