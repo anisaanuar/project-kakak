@@ -1,17 +1,20 @@
 // InteractiveElement.js
 import React from 'react';
+import collisionObjectImage from './assets/collision.png';
 
 const InteractiveElement = ({ position }) => {
   const elementStyle = {
     position: 'absolute',
+    bottom: '25px',
     left: `${position}px`,
-    bottom: '50px',
-    width: '100px', // Adjust based on the collision object width
-    height: '50px', // Adjust based on the collision object height
-    backgroundColor: 'red', // Add your styling
+    width: '100px', // Adjust the width as needed
+    height: '200px', // Adjust the height as needed
+    backgroundImage: `url(${collisionObjectImage})`, // Set the path to your collision object image
+    backgroundSize: 'contain', // Adjust the background size as needed
+    backgroundRepeat: 'no-repeat',
   };
 
-  return <div style={elementStyle}>Collision Object</div>;
+  return <div style={elementStyle}></div>;
 };
 
 export default InteractiveElement;
