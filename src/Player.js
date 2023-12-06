@@ -5,7 +5,6 @@ import walkFrame2 from './assets/sprite-02.png';
 
 const Player = ({ walking }) => {
   const [currentFrame, setCurrentFrame] = useState(1);
-  const [position, setPosition] = useState(0); // Use state to track position
 
   useEffect(() => {
     let animationInterval;
