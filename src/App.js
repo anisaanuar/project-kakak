@@ -15,6 +15,8 @@ const App = () => {
     const [isWalking, setIsWalking] = useState(false);
     const [backgroundPosition, setBackgroundPosition] = useState(0);
 
+    const playerWidth = 100;
+
     const [collisionObjects] = useState([
         new CollisionObject(500, 'message 1', './assets/collision.png', 200, 100),
         new CollisionObject(1000, 'message 2', './assets/collision.png', 200, 100),
@@ -46,7 +48,7 @@ const App = () => {
             // Check for collision between player and collision object
             setShowTextBox(false);
             collisionObjects.forEach(collisionObject => {
-                if (collisionObject.checkCollision(100)) {
+                if (collisionObject.checkCollision(playerWidth)) {
                     setShowTextBox(true);
                     setTextboxMessage(collisionObject.message);
                 }
