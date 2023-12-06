@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/project-kakak/static/css/main.e6c13ad2.css",
+    "main.js": "/project-kakak/static/js/main.04068aed.js",
+    "static/js/787.2b4e777b.chunk.js": "/project-kakak/static/js/787.2b4e777b.chunk.js",
+    "static/media/platform.jpg": "/project-kakak/static/media/platform.f4d7fed058227ccd736a.jpg",
+    "static/media/collision.png": "/project-kakak/static/media/collision.5a3a99c885a108faf154.png",
+    "static/media/textbox.png": "/project-kakak/static/media/textbox.6a473b54b50216ed0275.png",
+    "static/media/sprite-02.png": "/project-kakak/static/media/sprite-02.fb615e238022dc6e57b8.png",
+    "static/media/sprite-01.png": "/project-kakak/static/media/sprite-01.c6d801cf775e312d77a1.png",
+    "index.html": "/project-kakak/index.html",
+    "main.e6c13ad2.css.map": "/project-kakak/static/css/main.e6c13ad2.css.map",
+    "main.04068aed.js.map": "/project-kakak/static/js/main.04068aed.js.map",
+    "787.2b4e777b.chunk.js.map": "/project-kakak/static/js/787.2b4e777b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.04068aed.js"
+  ]
+}
