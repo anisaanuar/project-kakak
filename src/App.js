@@ -67,7 +67,7 @@ const App = () => {
             window.removeEventListener('keyup', handleKeyUp);
             window.removeEventListener('resize', handleResize);
         };
-    }, []);
+    }, [collisionObjectPosition]);
 
     const handleKeyDown = (event) => {
         if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
